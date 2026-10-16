@@ -18,5 +18,8 @@ Aplikasi **Kartu Profil & Detail Portofolio** berbasis Android yang dikembangkan
    adb shell am start -n com.example.lifecycledemo/.SecondActivity
 
 ## 📸 Tangkapan Layar (Screenshot)
-- Layar 1 (Profil): screen1.png
-- Layar 2 (Portofolio): screen2.png
+
+| Layar 1 (Profil) | Layar 2 (Portofolio) |
+| :---: | :---: |
+| ![Layar 1 - Profil](screen1.png) | ![Layar 2 - Portofolio](screen2.png) |
+
