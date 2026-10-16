@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Header Badge -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/header_lab_5"
+            android:textColor="@color/accent_cyan"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Mascot & Interactive Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/card_bg"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tv_mascot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="😼"
+                android:textSize="64sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_speech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/speech_initial"
+                android:textColor="@color/text_bright"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginBottom="12dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score_initial"
+                    android:textColor="@color/accent_cyan"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="16dp"/>
+
+                <TextView
+                    android:id="@+id/tv_rage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rage_initial"
+                    android:textColor="@color/accent_purple"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_lifecycle_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lifecycle_initial"
+                android:textColor="@color/text_muted"
+                android:textSize="12sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Buttons for Mascot -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_seblak"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:text="@string/btn_seblak"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_bright"
+                    app:backgroundTint="@color/accent_purple"/>
+
+                <Button
+                    android:id="@+id/btn_pinjam"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:text="@string/btn_pinjam"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_bright"
+                    app:backgroundTint="@color/accent_rose"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- User Identity Header -->
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@android:drawable/ic_menu_camera"
+            android:contentDescription="@string/cd_dev_avatar"
+            android:scaleType="centerCrop"
+            android:background="@color/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dev_name"
+            android:textColor="@color/text_bright"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dev_role"
+            android:textColor="@color/accent_purple"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Form Input Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/card_bg"
+            android:padding="20dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_profile_title"
+                android:textColor="@color/text_muted"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_username"
+                android:textColorHint="@color/text_muted"
+                android:textColor="@color/text_bright"
+                android:inputType="textPersonName"
+                android:autofillHints="name"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:background="@color/input_bg"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/et_tech"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_tech_stack"
+                android:textColorHint="@color/text_muted"
+                android:textColor="@color/text_bright"
+                android:inputType="text"
+                android:maxLines="1"
+                android:background="@color/input_bg"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+        <!-- 2 Tombol Berbobot 1:1 (layout_weight) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="@string/btn_reset"
+                android:textColor="@color/text_bright"
+                app:backgroundTint="@color/accent_rose"/>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="@string/btn_save_profile"
+                android:textColor="@color/bg_main"
+                android:textStyle="bold"
+                app:backgroundTint="@color/accent_cyan"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

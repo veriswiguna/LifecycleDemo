@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_cyan">#06B6D4</color>    <!-- Neon Cyan -->
+    <color name="accent_purple">#8B5CF6</color>  <!-- Neon Purple -->
+    <color name="accent_rose">#F43F5E</color>    <!-- Neon Rose (Batal) -->
+
+    <color name="text_bright">#F8FAFC</color>   <!-- High Contrast Text -->
+    <color name="text_muted">#94A3B8</color>    <!-- Muted Subtitle -->
+    <color name="input_bg">#1E293B</color>      <!-- Input Field BG -->
+    <color name="card_bg">#1E293B</color>       <!-- Card Background -->
+    <color name="bg_main">#0F172A</color>       <!-- Main Dark Background -->
+</resources>

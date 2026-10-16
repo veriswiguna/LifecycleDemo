@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LifecycleDemo</string>
+    <string name="header_lab_5">✦ LAB PERTEMUAN 5 ✦</string>
+    <string name="speech_initial">Halo! Ketuk aku atau beri aku seblak! 😸</string>
+    <string name="score_initial">❤️ Klik: 0</string>
+    <string name="rage_initial">🔥 Emosi: Level 0</string>
+    <string name="lifecycle_initial">State: Active (onCreate)</string>
+    <string name="btn_seblak">🍲 Seblak</string>
+    <string name="btn_pinjam">💸 Pinjam 100</string>
+    <string name="edit_profile_title">EDIT DATA PROFIL</string>
+    <string name="cd_dev_avatar">Dev Avatar</string>
+    <string name="cd_icon_stats">Icon Stats</string>
+
+    <string name="second_title">⚡ SYSTEM METRICS &amp; PORTOFOLIO</string>
+    <string name="second_subtitle">Status Sistem &amp; Pencapaian Praktikum</string>
+    <string name="stat_1_val">99.9%</string>
+    <string name="stat_1_lbl">Build Success Rate</string>
+    <string name="stat_2_val">100/100</string>
+    <string name="stat_2_lbl">Target Nilai Tugas 1</string>
+
+    <string name="dev_name">Praktikan Lifecycle</string>
+    <string name="dev_role">Android Developer</string>
+    <string name="hint_username">Nama Pengguna</string>
+    <string name="hint_tech_stack">Tech Stack</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_save_profile">Simpan Profil</string>
+</resources>
